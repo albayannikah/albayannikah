@@ -6,19 +6,22 @@
 
 <title>Albayan Nikah Association | Nikah Services in Brampton, Mississauga, Toronto & Ontario</title>
 
-<meta name="description" content="Albayan Nikah Association provides Islamic Nikah services in Brampton, Mississauga, Toronto and across Ontario. Nikah ceremonies can be conducted in the mosque, at home, or in banquet halls.">
-<meta name="keywords" content="Nikah Brampton, Nikah Mississauga, Nikah Toronto, Nikah Ontario, Islamic marriage Ontario, Muslim marriage officer Brampton, Imam Nikah service, Nikah ceremony Ontario">
+<meta name="description" content="Albayan Nikah Association provides Islamic Nikah services, marriage contracts, VIP marriage preparation, and couples consultations in Brampton, Mississauga, Toronto and across Ontario.">
+<meta name="keywords" content="Nikah Brampton, Nikah Mississauga, Nikah Toronto, Nikah Ontario, Islamic marriage Ontario, Muslim marriage officer Brampton, Imam Nikah service, Nikah ceremony Ontario, marriage contract, couples consultation, pre-marriage consultation">
 <meta name="author" content="Albayan Nikah Association">
 <meta name="robots" content="index, follow">
 
 <meta property="og:title" content="Albayan Nikah Association | Nikah Services in Ontario">
-<meta property="og:description" content="Islamic Nikah services in Brampton, Mississauga, Toronto and across Ontario.">
+<meta property="og:description" content="Islamic Nikah services, marriage contracts, VIP marriage preparation and couples consultations across Ontario.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://albayannikah.ca">
 
 <style>
-
 *{box-sizing:border-box;margin:0;padding:0;}
+
+html{
+scroll-behavior:smooth;
+}
 
 body{
 font-family:Arial,sans-serif;
@@ -29,12 +32,12 @@ line-height:1.6;
 
 header{
 background:
-linear-gradient(rgba(11,61,46,0.82),rgba(11,61,46,0.82)),
+linear-gradient(rgba(11,61,46,0.84),rgba(11,61,46,0.84)),
 url('https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=1400&q=80')
 center/cover no-repeat;
 color:white;
 text-align:center;
-padding:90px 20px;
+padding:95px 20px;
 }
 
 header h1{
@@ -44,7 +47,7 @@ margin-bottom:15px;
 
 header p{
 font-size:20px;
-max-width:800px;
+max-width:850px;
 margin:auto;
 margin-bottom:25px;
 }
@@ -58,6 +61,45 @@ text-decoration:none;
 font-weight:bold;
 border-radius:6px;
 margin:8px;
+transition:0.3s;
+}
+
+.btn:hover{
+opacity:0.92;
+}
+
+.btn-dark{
+display:inline-block;
+background:#0b3d2e;
+color:white;
+padding:14px 28px;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+margin-top:12px;
+transition:0.3s;
+}
+
+.btn-dark:hover{
+opacity:0.92;
+}
+
+.btn-outline{
+display:inline-block;
+background:transparent;
+color:#0b3d2e;
+padding:12px 24px;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+border:2px solid #0b3d2e;
+margin-top:12px;
+transition:0.3s;
+}
+
+.btn-outline:hover{
+background:#0b3d2e;
+color:white;
 }
 
 nav{
@@ -77,7 +119,7 @@ padding:15px 10px;
 }
 
 nav li{
-margin:8px 18px;
+margin:8px 16px;
 }
 
 nav a{
@@ -88,15 +130,15 @@ font-weight:bold;
 
 .container{
 width:90%;
-max-width:1100px;
+max-width:1150px;
 margin:auto;
 padding:50px 0;
 }
 
 .section-box{
 background:white;
-padding:40px 30px;
-border-radius:10px;
+padding:42px 30px;
+border-radius:12px;
 box-shadow:0 3px 12px rgba(0,0,0,0.08);
 margin-bottom:30px;
 }
@@ -104,8 +146,13 @@ margin-bottom:30px;
 h2{
 color:#0b3d2e;
 text-align:center;
-margin-bottom:20px;
-font-size:30px;
+margin-bottom:18px;
+font-size:31px;
+}
+
+h3{
+color:#0b3d2e;
+margin-bottom:12px;
 }
 
 .intro-text{
@@ -146,7 +193,7 @@ border-radius:10px;
 
 .requirements-list,
 .contact-list{
-max-width:750px;
+max-width:760px;
 margin:20px auto 0;
 padding-left:20px;
 font-size:17px;
@@ -158,18 +205,20 @@ margin-bottom:12px;
 }
 
 form{
-max-width:700px;
+max-width:760px;
 margin:25px auto 0;
 }
 
 form input,
-form textarea{
+form textarea,
+form select{
 width:100%;
 padding:14px;
 margin-bottom:15px;
 border:1px solid #ccc;
 border-radius:6px;
 font-size:16px;
+background:white;
 }
 
 form textarea{
@@ -201,8 +250,6 @@ padding:25px;
 margin-top:40px;
 }
 
-/* Imam Profile */
-
 .imam-profile{
 display:flex;
 flex-wrap:wrap;
@@ -227,6 +274,96 @@ margin-bottom:8px;
 color:#0b3d2e;
 }
 
+.pricing-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+gap:24px;
+margin-top:28px;
+}
+
+.pricing-card{
+background:#fafafa;
+border:1px solid #e3e3e3;
+border-radius:14px;
+padding:28px 24px;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.pricing-card.featured{
+border:2px solid #d4af37;
+background:#fffdf6;
+}
+
+.package-label{
+font-size:13px;
+font-weight:bold;
+letter-spacing:0.6px;
+text-transform:uppercase;
+color:#8a6b00;
+margin-bottom:10px;
+}
+
+.package-features{
+list-style:none;
+padding:0;
+margin:18px 0 22px 0;
+}
+
+.package-features li{
+padding:9px 0;
+border-bottom:1px solid #ececec;
+font-size:16px;
+}
+
+.package-features li:last-child{
+border-bottom:none;
+}
+
+.package-actions{
+margin-top:auto;
+}
+
+.payment-box{
+background:#f8f3df;
+border:1px solid #e3d59a;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+text-align:center;
+}
+
+.payment-box p{
+margin-bottom:10px;
+}
+
+.note{
+font-size:14px;
+color:#666;
+margin-top:10px;
+text-align:center;
+}
+
+.form-title{
+margin-top:35px;
+margin-bottom:10px;
+text-align:center;
+color:#0b3d2e;
+}
+
+@media(max-width:768px){
+header h1{
+font-size:32px;
+}
+header p{
+font-size:18px;
+}
+.section-box{
+padding:32px 20px;
+}
+}
 </style>
 </head>
 
@@ -235,7 +372,7 @@ color:#0b3d2e;
 <header>
 <h1>Albayan Nikah Association</h1>
 <p>Islamic Marriage Services in Accordance with the Qur’an and Sunnah</p>
-<a href="#booking" class="btn">Request Nikah Service</a>
+<a href="#packages" class="btn">View Packages</a>
 <a href="https://wa.me/14384625678" class="btn">Contact on WhatsApp</a>
 </header>
 
@@ -244,6 +381,10 @@ color:#0b3d2e;
 <li><a href="#about">About</a></li>
 <li><a href="#imam">Imam</a></li>
 <li><a href="#services">Services</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#contracts">Marriage Contracts</a></li>
+<li><a href="#vip">VIP Package</a></li>
+<li><a href="#consultations">Consultations</a></li>
 <li><a href="#gallery">Gallery</a></li>
 <li><a href="#requirements">Requirements</a></li>
 <li><a href="#process">How to Book</a></li>
@@ -258,27 +399,20 @@ color:#0b3d2e;
 <div class="section-box">
 <h2>About Albayan Nikah Association</h2>
 <p class="intro-text">
-Albayan Nikah Association facilitates Islamic marriages in a respectful,
-organized and Islamically sound manner. Nikah is performed by a licensed
-marriage officer in accordance with Islamic principles and Ontario marriage regulations.
-We provide Nikah services in Brampton, Mississauga, Toronto and across Ontario.
+Albayan Nikah Association facilitates Islamic marriages in a respectful, organized, and Islamically sound manner. Nikah is performed by a licensed marriage officer in accordance with Islamic principles and Ontario marriage regulations. We provide Nikah services in Brampton, Mississauga, Toronto, and across Ontario.
 </p>
 </div>
 </section>
 
 <section id="imam">
 <div class="section-box">
-
 <h2>Imam Profile</h2>
 
 <div class="imam-profile">
-
 <img src="Immam Hussien.jpeg" alt="Imam El-Husseini Anas">
 
 <div class="imam-text">
-
 <h3>Imam El-Husseini Anas</h3>
-
 <p><strong>Imam at Masjid Al Salam, Brampton</strong></p>
 
 <p>
@@ -286,44 +420,222 @@ Holding a university degree from Al-Azhar University and Ijazah in Qur’an and 
 </p>
 
 <p>
-Imam El-Husseini Anas serves the Muslim community with dedication and integrity,
-helping couples complete their Nikah in accordance with the Qur’an and Sunnah
-while ensuring the process is organized and respectful for families.
+Imam El-Husseini Anas serves the Muslim community with dedication and integrity, helping couples complete their Nikah in accordance with the Qur’an and Sunnah while ensuring the process is organized and respectful for families.
 </p>
-
 </div>
-
 </div>
-
 </div>
 </section>
 
 <section id="services">
 <div class="section-box">
-<h2>Nikah Services</h2>
+<h2>Our Services</h2>
 
 <div class="services">
-
 <div class="card">
 <h3>Nikah Ceremony</h3>
-<p>
-Conducting Islamic marriage ceremonies in accordance with the Qur’an and Sunnah.
-Nikah ceremonies can be performed in the mosque, at home, or in banquet halls anywhere in Ontario.
+<p>Conducting Islamic marriage ceremonies in accordance with the Qur’an and Sunnah. Nikah ceremonies can be performed in the mosque, at home, or in banquet halls anywhere in Ontario.</p>
+</div>
+
+<div class="card">
+<h3>Marriage Contracts</h3>
+<p>Preparation of marriage contracts with short Shariah advice and secure submission of couples’ information and supporting documents.</p>
+</div>
+
+<div class="card">
+<h3>VIP Marriage Preparation</h3>
+<p>A complete package including consultations, document preparation, post-marriage follow-up, and short online workshops.</p>
+</div>
+
+<div class="card">
+<h3>Couples Consultations</h3>
+<p>Short sessions for couples after marriage or for current couples seeking guidance and support.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="packages">
+<div class="section-box">
+<h2>Packages</h2>
+<p class="intro-text">
+Explore our available service packages and choose the one that best fits your needs.
+</p>
+
+<div class="pricing-grid">
+
+<div class="pricing-card">
+<div>
+<div class="package-label">Basic Package</div>
+<h3>Marriage Contracts</h3>
+
+<ul class="package-features">
+<li>Drafting the marriage contract</li>
+<li>Short Shariah advice before the marriage</li>
+<li>Full form for couples’ information</li>
+<li>Upload copies of required documents</li>
+<li>Payment through the website</li>
+</ul>
+</div>
+
+<div class="package-actions">
+<a href="#contract-form" class="btn-dark">Book Now</a>
+<a href="YOUR-MARRIAGE-CONTRACT-PAYMENT-LINK-HERE" class="btn-outline">Pay Now</a>
+</div>
+</div>
+
+<div class="pricing-card featured">
+<div>
+<div class="package-label">Complete Preparation</div>
+<h3>VIP Package</h3>
+
+<ul class="package-features">
+<li>Pre-marriage consultations</li>
+<li>Document preparation</li>
+<li>Post-marriage follow-up</li>
+<li>Short online workshops</li>
+<li>Booking form and package payment</li>
+</ul>
+</div>
+
+<div class="package-actions">
+<a href="#vip-form" class="btn-dark">Book Now</a>
+<a href="YOUR-VIP-PAYMENT-LINK-HERE" class="btn-outline">Pay Now</a>
+</div>
+</div>
+
+<div class="pricing-card">
+<div>
+<div class="package-label">Private Support</div>
+<h3>Couples Consultations</h3>
+
+<ul class="package-features">
+<li>Short sessions for couples after marriage</li>
+<li>Support for current couples</li>
+<li>Direct booking form</li>
+<li>Preferred contact method selection</li>
+<li>Payment via website</li>
+</ul>
+</div>
+
+<div class="package-actions">
+<a href="#consultation-form" class="btn-dark">Book Now</a>
+<a href="YOUR-CONSULTATION-PAYMENT-LINK-HERE" class="btn-outline">Pay Now</a>
+</div>
+</div>
+
+</div>
+
+<p class="note">
+Replace each Pay Now link with your PayPal or Stripe payment link.
 </p>
 </div>
+</section>
 
-<div class="card">
-<h3>Marriage Guidance</h3>
-<p>Helping couples understand Islamic marriage requirements.</p>
+<section id="contracts">
+<div class="section-box">
+<h2>Marriage Contracts – Basic Package</h2>
+<p class="intro-text">
+Drafting the marriage contract with short Shariah advice before the marriage, together with a full information form and document upload option.
+</p>
+
+<div class="payment-box">
+<p><strong>Accepted Payments:</strong> PayPal, Visa, Mastercard</p>
+<a href="YOUR-MARRIAGE-CONTRACT-PAYMENT-LINK-HERE" class="btn">Pay Now</a>
 </div>
 
-<div class="card">
-<h3>Community Support</h3>
-<p>Helping families organize a simple and respectful Nikah ceremony.</p>
+<h3 class="form-title">Book Marriage Contract</h3>
+
+<form id="contract-form" action="https://formspree.io/f/xkoqjlgo" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="Service Type" value="Marriage Contract - Basic Package">
+
+<input type="text" name="Husband Full Name" placeholder="Full Name of Husband" required>
+<input type="text" name="Wife Full Name" placeholder="Full Name of Wife" required>
+<input type="email" name="Email" placeholder="Email Address" required>
+<input type="tel" name="Phone Number" placeholder="Phone Number" required>
+<input type="text" name="Preferred Date" placeholder="Preferred Date">
+<textarea name="Shariah Questions" placeholder="Any details or questions before the marriage contract"></textarea>
+
+<label for="contract-docs"><strong>Upload ID / Required Documents</strong></label>
+<input id="contract-docs" type="file" name="Required Documents" accept=".pdf,image/*" multiple>
+
+<button type="submit">Book Marriage Contract</button>
+<p class="note">Please make sure your form service supports file uploads.</p>
+</form>
+</div>
+</section>
+
+<section id="vip">
+<div class="section-box">
+<h2>VIP Package – Complete Marriage Preparation</h2>
+<p class="intro-text">
+Includes pre-marriage consultations, document preparation, post-marriage follow-up, and short online workshops.
+</p>
+
+<div class="payment-box">
+<p><strong>Accepted Payments:</strong> PayPal, Visa, Mastercard</p>
+<a href="YOUR-VIP-PAYMENT-LINK-HERE" class="btn">Pay Now</a>
 </div>
 
+<h3 class="form-title">Book VIP Package</h3>
+
+<form id="vip-form" action="https://formspree.io/f/xkoqjlgo" method="POST">
+<input type="hidden" name="Service Type" value="VIP Package - Complete Marriage Preparation">
+
+<input type="text" name="Full Name" placeholder="Full Name" required>
+<input type="email" name="Email" placeholder="Email Address" required>
+<input type="tel" name="Phone Number" placeholder="Phone Number" required>
+<input type="text" name="Partner Name" placeholder="Partner Name">
+<input type="text" name="Preferred Start Date" placeholder="Preferred Start Date">
+
+<select name="Preferred Contact Method">
+<option value="">Preferred Contact Method</option>
+<option value="Phone">Phone</option>
+<option value="Email">Email</option>
+<option value="WhatsApp">WhatsApp</option>
+<option value="Zoom">Zoom</option>
+</select>
+
+<textarea name="VIP Package Details" placeholder="Please share any details about your needs or questions"></textarea>
+
+<button type="submit">Book VIP Package</button>
+</form>
+</div>
+</section>
+
+<section id="consultations">
+<div class="section-box">
+<h2>Couples Consultations</h2>
+<p class="intro-text">
+Short sessions for couples after marriage or for current couples, with direct booking and online payment.
+</p>
+
+<div class="payment-box">
+<p><strong>Accepted Payments:</strong> PayPal, Visa, Mastercard</p>
+<a href="YOUR-CONSULTATION-PAYMENT-LINK-HERE" class="btn">Pay Now</a>
 </div>
 
+<h3 class="form-title">Book Consultation</h3>
+
+<form id="consultation-form" action="https://formspree.io/f/xkoqjlgo" method="POST">
+<input type="hidden" name="Service Type" value="Couples Consultation">
+
+<input type="text" name="Full Name" placeholder="Full Name" required>
+<input type="email" name="Email" placeholder="Email Address" required>
+<input type="text" name="Reason for Session" placeholder="Reason for Session" required>
+
+<select name="Preferred Contact Method" required>
+<option value="">Preferred Contact Method</option>
+<option value="Phone">Phone</option>
+<option value="Email">Email</option>
+<option value="WhatsApp">WhatsApp</option>
+<option value="Zoom">Zoom</option>
+</select>
+
+<textarea name="Additional Details" placeholder="Additional details"></textarea>
+
+<button type="submit">Book Consultation</button>
+</form>
 </div>
 </section>
 
@@ -332,12 +644,10 @@ Nikah ceremonies can be performed in the mosque, at home, or in banquet halls an
 <h2>Gallery</h2>
 
 <div class="gallery">
-
 <img src="Nikah1.jpeg" alt="Nikah ceremony">
 <img src="Nikah2.jpeg" alt="Islamic marriage ceremony">
 <img src="Nikah3.jpeg" alt="Signing Nikah contract">
 <img src="Nikah4.jpeg" alt="Nikah celebration">
-
 </div>
 </div>
 </section>
@@ -345,35 +655,24 @@ Nikah ceremonies can be performed in the mosque, at home, or in banquet halls an
 <section id="requirements">
 <div class="section-box">
 <h2>Nikah Requirements</h2>
-
 <ul class="requirements-list">
-
 <li>Consent of both bride and groom</li>
 <li>Two Muslim witnesses</li>
 <li>Wali (guardian) for the bride</li>
 <li>Agreed mahr (dowry)</li>
 <li>Valid identification documents</li>
-
 </ul>
-
 </div>
 </section>
 
 <section id="process">
 <div class="section-box">
-
 <h2>How to Book a Nikah</h2>
-
 <ul class="requirements-list">
-
 <li><strong>Step 1:</strong> Fill out the Nikah request form with your details and preferred date.</li>
-
 <li><strong>Step 2:</strong> We will contact you to confirm the details and answer any questions.</li>
-
 <li><strong>Step 3:</strong> The Nikah ceremony will be conducted at the agreed location in accordance with the Qur’an and Sunnah.</li>
-
 </ul>
-
 </div>
 </section>
 
@@ -382,8 +681,8 @@ Nikah ceremonies can be performed in the mosque, at home, or in banquet halls an
 <h2>Book a Nikah</h2>
 
 <form action="https://formspree.io/f/xkoqjlgo" method="POST">
-
 <input type="hidden" name="_next" value="thankyou.html">
+<input type="hidden" name="Service Type" value="Nikah Booking">
 
 <input type="text" name="Groom Name" placeholder="Full Name of Groom" required>
 <input type="text" name="Bride Name" placeholder="Full Name of Bride" required>
@@ -393,38 +692,30 @@ Nikah ceremonies can be performed in the mosque, at home, or in banquet halls an
 <textarea name="Message" placeholder="Additional details"></textarea>
 
 <button type="submit">Submit Request</button>
-
 </form>
-
 </div>
 </section>
 
 <section id="contact">
 <div class="section-box">
-
 <h2>Contact Us</h2>
 
 <ul class="contact-list">
-
 <li><strong>Organization:</strong> Albayan Nikah Association</li>
 <li><strong>Location:</strong> 124 Baycliffe Cres, Brampton, Ontario</li>
 <li><strong>Email:</strong> <a href="mailto:albayannikah@gmail.com">albayannikah@gmail.com</a></li>
 <li><strong>Phone:</strong> +1 438 462 5678</li>
 <li><strong>WhatsApp:</strong> +1 438 462 5678</li>
-
 </ul>
 
 <div class="map-box">
-
 <iframe
 src="https://maps.google.com/maps?q=124%20Baycliffe%20Cres%20Brampton%20Ontario&t=&z=13&ie=UTF8&iwloc=&output=embed"
 width="100%"
 height="300"
 style="border:0;">
 </iframe>
-
 </div>
-
 </div>
 </section>
 
